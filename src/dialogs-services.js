@@ -242,7 +242,8 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 								return {
 									header : angular.copy(header),
 									msg : angular.copy(msg),
-									fa : _fa
+									fa : _fa,
+									opts: opts
 								};
 							}
 						}

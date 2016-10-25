@@ -103,6 +103,8 @@ ctrlrs.controller('confirmDialogCtrl',['$scope','$uibModalInstance','$translate'
 	$scope.header = (angular.isDefined(data.header)) ? data.header : $translate.instant('DIALOGS_CONFIRMATION');
 	$scope.msg = (angular.isDefined(data.msg)) ? data.msg : $translate.instant('DIALOGS_CONFIRMATION_MSG');
 	$scope.icon = (angular.isDefined(data.fa) && angular.equals(data.fa,true)) ? 'fa fa-check' : 'glyphicon glyphicon-check';
+	$scope.dialogs_yes = (angular.isDefined(data.opts.dialogs_yes)) ? data.opts.dialogs_yes : $translate.instant('DIALOGS_YES');
+	$scope.dialogs_no = (angular.isDefined(data.opts.dialogs_no)) ? data.opts.dialogs_no : $translate.instant('DIALOGS_NO');
 
 	//-- Methods -----//
 	
