@@ -226,7 +226,11 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 				 * @param	opts	object
 				 */
 				confirm : function(header,msg,opts){
+					dialogs_yes = opts.dialogs_yes
+					dialogs_no = opts.dialogs_no
 					opts = _setOpts(opts);
+					opts.dialogs_yes = dialogs_yes
+					opts.dialogs_no = dialogs_no
 
 					return $uibModal.open({
 						templateUrl : '/dialogs/confirm.html',
